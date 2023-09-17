@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Math Game</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Math Game for Grade 3</h1>
+    <p>Try to answer the math problems below:</p>
+
+    <div id="problem"></div>
+    <input type="text" id="answer" placeholder="Your Answer">
+    <button onclick="checkAnswer()">Check</button>
+    <p id="result"></p>
+
+    <script>
+        function generateProblem() {
+            const num1 = Math.floor(Math.random() * 10) + 1;
+            const num2 = Math.floor(Math.random() * 10) + 1;
+            const operator = Math.random() < 0.5 ? '+' : '-';
+            
+            document.getElementById('problem').textContent = `${num1} ${operator} ${num2}`;
+            
+            return operator === '+' ? num1 + num2 : num1 - num2;
+        }
+        
+        let correctAnswer = generateProblem();
+        
+        function checkAnswer() {
+            const userAnswer = parseInt(document.getElementById('answer').value);
+            if (userAnswer === correctAnswer) {
+                document.getElementById('result').textContent = 'Correct! Well done.';
+                correctAnswer = generateProblem();
+            } else {
+                document.getElementById('result').textContent = 'Incorrect. Try again.';
+            }
+        }
+    </script>
+</body>
+</html>

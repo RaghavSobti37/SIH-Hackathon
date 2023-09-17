@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Web Page</title>
+</head>
+<body>
+    <script>
+        // browserFile.js
+
+// Make a request to the Node.js server to get the translated text
+fetch('/translateText')
+  .then(response => response.json())
+  .then(translatedTexts => {
+    // Now you can use the translatedTexts variable in this file
+    console.log('Translated Texts:', translatedTexts);
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
+
+    </script>
+</body>
+</html>

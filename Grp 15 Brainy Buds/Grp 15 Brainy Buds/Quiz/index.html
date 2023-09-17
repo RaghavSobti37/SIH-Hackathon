@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+    <title>Quiz</title>
+</head>
+
+<body>
+    <div class="start-screen">
+        <div class="dropdown-select">
+            <h2>Select the Language</h2>
+            <br>
+            <select id="difficulty-select" style="
+                width: 300px;
+                height: 40px;
+                border-radius: 40px; /* Rounded corners */
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow */
+                margin-bottom: 20px; ">
+                <option value="1">English</option>
+                <option value="2">Bengali</option>
+                <option value="3">Gujarati</option>
+                <option value="4">Tamil</option>
+            </select>
+        </div>
+        <button id="start-button">Start</button>
+    </div>
+    <div id="display-container">
+        <div class="header">
+            <div class="number-of-count">
+                <span class="number-of-question">1 of 3 questions</span>
+            </div>
+        </div>
+        <div id="container">
+        </div>
+        <button id="next-button">Next</button>
+    </div>
+    <div class="score-container hide">
+        <div id="user-score"> Score</div>
+        <button id="restart">Restart</button>
+    </div>
+
+
+
+    <script src="quiz.js"></script>
+    <script src="server.js"></script>
+    <script>
+        const fs = require('fs');
+        const difficultySelect = document.getElementById('difficulty-select');
+        const startButton = document.getElementById('start-button');
+
+        function writeValueToFile(value) {
+            fs.writeFile('selectedValue.txt', value, (err) => {
+                if (err) {
+                    console.error('Error writing to file:', err);
+                } else {
+                    console.log('Value written to file successfully.');
+                }
+            });
+        }
+
+        module.exports = {
+            writeValueToFile,
+        };
+
+        startButton.addEventListener('click', () => {
+            const selectedValue = difficultySelect.value;
+            console.log(selectedValue);
+            writeValueToFile(selectedValue);
+        }
+        );
+    </script>
+</body>
+
+</html>

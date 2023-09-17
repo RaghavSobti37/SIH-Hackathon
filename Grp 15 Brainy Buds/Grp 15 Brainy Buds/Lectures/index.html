@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Add your meta tags, title, and CSS links here -->
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+
+    <!-- header section starts -->
+
+    <header class="header">
+
+        <a href="#" class="logo"> <i class="fas fa-school"></i>Brainy Buds</a>
+
+        <nav class="navbar">
+            <a href="../HomePage/index.html">home</a>
+            <a href="#about">about</a>
+            <a href="#education">education</a>
+            <a href="#teacher">textbook</a>
+            <a href="#gallery">our games</a>
+            <a href="#contact">contact</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-user" id="login-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+
+        <form action="" class="login-form">
+            <h3>login now</h3>
+            <input type="email" placeholder="your email" class="box">
+            <input type="password" placeholder="your password" class="box">
+            <p>forget your password <a href="#">click here</a> </p>
+            <input type="submit" value="login now" class="btn">
+        </form>
+
+    </header>
+
+    <section class="contact" id="contact">
+        <h1 class="heading"> <span>contact</span> us</h1>
+        <h1 class="heading"> <span>Choose the language you </span> prefer</h1>
+        
+        <div class="icons-container">
+            <div class="icons">
+                <button id="englishBtn">
+                    <h3>English</h3>
+                </button>
+            </div>
+
+            <div class="icons">
+                <button id="bengaliBtn">
+                    <h3>Bengali</h3>
+                </button>
+            </div>
+
+            <div class="icons">
+                <button id="teluguBtn">
+                    <h3>Telugu</h3>
+                </button>
+            </div>
+        </div>
+
+        <!-- Video elements for each language initially hidden -->
+        <div id="englishVideo" style="display: none;">
+            <video controls width="1230" height="500">
+                <source src="english_video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div id="bengaliVideo" style="display: none; margin-top:20px">
+            <video controls width="1230" height="500">
+                <source src="https://drive.google.com/file/d/17DTxkku20m-2XZHZ1p_P0k5-ma_KBoZy/view?usp=sharing" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div id="teluguVideo" style="display: none;">
+            <video controls width="1230" height="500">
+                <source src="telugu_video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <!-- contact section ends -->
+
+    <script>
+        // JavaScript to handle button clicks and show/hide videos
+        const englishBtn = document.getElementById('englishBtn');
+        const bengaliBtn = document.getElementById('bengaliBtn');
+        const teluguBtn = document.getElementById('teluguBtn');
+
+        const englishVideo = document.getElementById('englishVideo');
+        const bengaliVideo = document.getElementById('bengaliVideo');
+        const teluguVideo = document.getElementById('teluguVideo');
+
+        englishBtn.addEventListener('click', () => {
+            hideAllVideos();
+            englishVideo.style.display = 'block';
+        });
+
+        bengaliBtn.addEventListener('click', () => {
+            hideAllVideos();
+            bengaliVideo.style.display = 'block';
+        });
+
+        teluguBtn.addEventListener('click', () => {
+            hideAllVideos();
+            teluguVideo.style.display = 'block';
+        });
+
+        function hideAllVideos() {
+            englishVideo.style.display = 'none';
+            bengaliVideo.style.display = 'none';
+            teluguVideo.style.display = 'none';
+        }
+    </script>
+</body>
+</html>

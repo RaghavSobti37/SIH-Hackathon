@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brainy Buds</title>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- lightgallery css cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- header section starts -->
+
+    <header class="header">
+
+        <a href="#" class="logo"> <i class="fas fa-school"></i>Brainy Buds</a>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#education">education</a>
+            <a href="#teacher">textbook</a>
+            <a href="#games">our games</a>
+            <a href="#contact">contact</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-user" id="login-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+
+        <form action="" class="login-form">
+            <h3>login now</h3>
+            <input type="email" placeholder="your email" class="box">
+            <input type="password" placeholder="your password" class="box">
+            <p>forget your password <a href="#">click here</a> </p>
+            <input type="submit" value="login now" class="btn">
+        </form>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- home section starts -->
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3>welcome to our <span>Brainy Buds</span></h3>
+            <p>We are a team of educators and experts who are dedicated to providing high-quality educational content that sparks curiosity and fosters a love for learning. We understand that every child is unique, so we tailor our resources to cater to various learning styles and interests. </p>
+            <a href="#" class="btn">learn more</a>
+        </div>
+
+        <div class="image">
+            <img src="images/home.png" alt="">
+        </div>
+
+        <div class="custom-shape-divider-bottom-1684324473">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+            </svg>
+        </div>
+
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- about us section starts -->
+
+    <section class="about" id="about">
+
+        <h1 class="heading"> <span>about</span> us</h1>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="images/about us.png" alt="">
+            </div>
+
+            <div class="content">
+                <h3>Exploring, Growing, And Thriving Together</h3>
+                <p>Welcome to Brainy Buds, where learning is an adventure!
+
+                    At Brainy Buds, we believe that education should be exciting, engaging, and fun! We're here to make learning an enjoyable journey for kids of all ages. Our team is passionate about creating a world of knowledge that's accessible and enjoyable for young minds.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- about us section ends -->
+
+    <!-- education section start -->
+
+    <section class="education" id="education">
+
+        <h1 class="heading">our <span> education</span></h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <a href="../Lectures/index.html"><h3>Class 1</h3></a>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio ration</p>
+                <img src="images/education1.png" alt="">
+            </div>
+
+            <div class="box">
+                <a href="../Lectures/index.html"><h3>Class 2</h3></a>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio ration</p>
+                <img src="images/education2.png" alt="">
+            </div>
+
+            <div class="box">
+                <a href="../Lectures/index.html"><h3>Class 3</h3></a>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio ration</p>
+                <img src="images/education3.png" alt="">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- education section ends -->
+
+    <!-- teacher section starts -->
+
+    <section class="teacher" id="teacher">
+
+        <h1 class="heading">T<span>extbooks</span></h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/class1.jpg" style="width:370px" alt="">
+                <h3 id="downloadButton"">Class 1</h3>
+                <p>class 1</p>
+             
+            </div>
+
+            <div class="box">
+                <img src="images/class2.jpg" style="width:370px"alt="">
+                <h3 id="downloadButton2">Class 2</h3>
+                <p>class 2</p>
+            
+            </div>
+
+            <div class="box">
+                <img src="images/class3.jpg"style="width:370px" alt="">
+                <h3 id="downloadButton3">Class 3</h3>
+                <p>class 3</p>
+              
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- teacher section ends -->
+
+    <!-- activities section starts -->
+    <section class="activities" id="games">
+        <h1 class="heading">our <span>games</span></h1>
+        <!-- Dropdown menu -->
+        <select id="gameSelector">
+            <option value="all">All</option>
+            <option value="clas1">Class 1st</option>
+            <option value="clas2">Class 2nd</option>
+            <option value="clas3">Class 3rd</option>
+        </select>
+        <div class="box-container">
+            <div class="box" data-class="clas1">
+                <img src="images/activities6.png" alt="">
+                <h3>Mario Game</h3></a>
+                <a href="../Game 1/index.html"><button class="playbutton">PLAY</button></a>
+                <p class="classes">Class 1st</p>
+            </div>
+            
+            <div class="box" data-class="clas2">
+                <img src="images/activities2.png" alt="">
+                <h3>Maths Game</h3>
+                <a href="../Game 2/index.html"><button class="playbutton">PLAY</button></a>
+                <p class="classes">Class 2nd</p>
+            </div>
+            
+            <div class="box" data-class="clas3">
+                <img src="images/activities3.png" alt="">
+                <h3>games and fun</h3>
+                <button class="playbutton">PLAY</button>
+                <p class="classes">Class 3rd</p>
+            </div>
+
+            <div class="box" data-class="clas3">
+                <img src="images/activities4.png" alt="">
+                <h3>games and fun</h3>
+                <button class="playbutton">PLAY</button>
+                <p class="classes">Class 1st</p>
+            </div>
+
+            
+        </div>
+    </section>
+
+    <section class="activities">
+        <h1 class="heading">our <span>Quizzes</span></h1>
+        <!-- Dropdown menu -->
+        <select id="gameSelector">
+            <option value="all">All</option>
+            <option value="clas1">Class 1st</option>
+            <option value="clas2">Class 2nd</option>
+            <option value="clas3">Class 3rd</option>
+        </select>
+        <div class="box-container">
+            <div class="box" data-class="clas1">
+                <img src="images/activities5.png" alt="">
+                <h3>Maths</h3></a>
+                <a href=""><button class="playbutton">START</button></a>
+                <p class="classes">Class 1st</p>
+            </div>
+            
+            <div class="box" data-class="clas2">
+                <img src="images/activities1.png" alt="">
+                <h3>English</h3>
+                <a href=""><button class="playbutton">START</button></a>
+                <p class="classes">Class 2nd</p>
+            </div>
+            
+            <div class="box" data-class="clas3">
+                <img src="images/activities4.png" alt="">
+                <h3>EVS</h3>
+                <button class="playbutton">START</button>
+                <p class="classes">Class 3rd</p>
+            </div>
+
+            <div class="box" data-class="clas3">
+                <img src="images/activities3.png" alt="">
+                <h3>GK</h3>
+                <button class="playbutton">START</button>
+                <p class="classes">Class 1st</p>
+            </div>
+
+            
+        </div>
+    </section>
+    
+    
+    
+
+
+
+    <!-- activities section ends -->
+
+    <!-- contact section starts -->
+
+    <section class="contact" id="contact">
+
+        <h1 class="heading"> <span>contact</span> us</h1>
+
+        <div class="icons-container">
+
+            <div class="icons">
+                <i class="fas fa-clock"></i>
+                <h3>Study Anytime</h3>
+                <p>Interactive Lessons</p>
+                <p>Games and Quizzes</p>
+                <p>Videos and Animation </p>
+            </div>
+
+            <div class="icons">
+                <i class="fas fa-envelope"></i>
+                <h3>email</h3>
+                <p>raghavraj.sobti.21cse@bmu.edu.in</p>
+                <p>ankur.kausha.21cse@bmu.edu.in</p>
+            </div>
+
+            <div class="icons">
+                <i class="fas fa-phone"></i>
+                <h3>phone number</h3>
+                <p>+123-456-7890</p>
+                <p>+123-456-7890</p>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="images/contact.gif" alt="">
+            </div>
+
+            <form action="">
+                <h3 style="font-size: 30px;">get in touch</h3>
+                <br><br>
+                <h2>We're here to bridge the gap between rural communities and affordable lab services. Whether you have questions, need assistance, 
+                    or want to explore the possibilities of accessing cost-effective labs, don't hesitate to reach out. Your connection with us is the first step towards 
+                    unlocking a world of healthcare and scientific opportunities. Let's work together to make quality labs accessible to all.</h2>
+                    <br><br>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd-otQ5A0qXcHFXLsY62Hs3LBa4kRPbkJd-AooxcW6GUEK0mA/viewform" class="btn">Send Message</a>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- contact section ends -->
+
+    <!-- lightgallery cdn js link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+    <!-- custom js file link -->
+    <script src="script.js"></script>
+
+    <script>
+        lightGallery(document.querySelector('.gallery .gallery-container'));
+    </script>
+
+    <script>
+
+        // Get the dropdown element
+const gameSelector = document.getElementById("gameSelector");
+
+// Get all the box elements
+const boxes = document.querySelectorAll(".box");
+
+// Add an event listener to the dropdown menu
+gameSelector.addEventListener("change", function () {
+    const selectedValue = gameSelector.value; // Get the selected option value
+    
+    // Loop through all the boxes and hide/show based on the selected value
+    boxes.forEach(box => {
+        const dataClass = box.getAttribute("data-class");
+        if (selectedValue === "all" || selectedValue === dataClass) {
+            box.style.display = "block"; // Show the box with the matching data attribute
+        } else {
+            box.style.display ='none'; // Hide the boxes with different data attributes
+        }
+    });
+});
+
+function downloadPDF() {
+    // Define the Google Drive link to the PDF file
+    var pdfUrl = 'https://drive.google.com/file/d/1YHnav4bUEE7F3EVlUwvBVF2GP_rySrz5/view?usp=sharing';
+
+    // Create an anchor element with the download attribute
+    var link = document.createElement('a');
+    link.href = pdfUrl;
+    link.download = 'downloaded.pdf'; // Specify the downloaded file name
+
+    // Trigger a click event on the anchor element
+    link.click();
+}
+
+// Attach the downloadPDF function to the button click event
+document.getElementById('downloadButton').addEventListener('click', downloadPDF);
+
+function downloadPDF1() {
+    // Define the Google Drive link to the PDF file
+    var pdfUrl = 'https://drive.google.com/file/d/1X8pAo-CXmCPnBQgJhJqCEaMQn_lux0FM/view?usp=sharing';
+
+    // Create an anchor element with the download attribute
+    var link = document.createElement('a');
+    link.href = pdfUrl;
+    link.download = 'downloaded.pdf'; // Specify the downloaded file name
+
+    // Trigger a click event on the anchor element
+    link.click();
+}
+
+// Attach the downloadPDF function to the button click event
+document.getElementById('downloadButton2').addEventListener('click', downloadPDF1);
+
+function downloadPDF2() {
+    // Define the Google Drive link to the PDF file
+    var pdfUrl = 'https://drive.google.com/file/d/1LQjuIfLuKcalvD1etWdOpxTajylRK4ZT/view?usp=sharing';
+
+    // Create an anchor element with the download attribute
+    var link = document.createElement('a');
+    link.href = pdfUrl;
+    link.download = 'downloaded.pdf'; // Specify the downloaded file name
+
+    // Trigger a click event on the anchor element
+    link.click();
+}
+
+// Attach the downloadPDF function to the button click event
+document.getElementById('downloadButton3').addEventListener('click', downloadPDF2);
+
+    </script>
+
+</body>
+
+
+</html>

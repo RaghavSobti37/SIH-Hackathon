@@ -1,0 +1,76 @@
+/* CSS styles for the math game */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#problem {
+    font-size: 24px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+#answer {
+    font-size: 18px;
+    padding: 10px;
+    width: 100px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    font-size: 18px;
+    margin-top: 10px;
+    color: green;
+}
+
+/* Center the elements horizontally */
+#problem, #answer, button {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    #answer {
+        width: 80px;
+    }
+}
