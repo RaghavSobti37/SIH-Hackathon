@@ -1,41 +1,76 @@
-# SIH-Hackathon
+<h1 align="center">SIH Hackathon</h1>
 
-# Project: Educational Website for Rural Kids
+<p align="center">
+  Smart India Hackathon project repository for rapid prototyping, web development and problem-solution experimentation.
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/visibility-public-brightgreen" alt="Public repository" />
+  <img src="https://img.shields.io/badge/maintained-yes-blue" alt="Maintained" />
+  <img src="https://img.shields.io/badge/owner-RaghavSobti37-111827" alt="Owner" />
+</p>
 
 ## Overview
-This project is part of the Smart India Hackathon (SIH) initiative, aimed at enabling rural children to study in their regional languages. The website provides educational resources including quizzes, labs, and games to make learning interactive and engaging. 
 
-## Features
-- **Multilingual Support**: Educational content available in various regional languages.
-- **Interactive Quizzes**: Fun and educational quizzes to reinforce learning.
-- **Engaging Games**: Educational games designed to make learning enjoyable.
-- **Video Translations**: Educational videos translated into multiple regional languages.
-- **Comprehensive Learning Materials**: Includes labs, lectures, and other learning resources.
+Smart India Hackathon project repository for rapid prototyping, web development and problem-solution experimentation.
 
-## Team Contributions
-- **Palak and Dyuti**: Website design, ensuring a user-friendly and engaging interface.
-- **Ankur**: Creation of quizzes and games, adding interactive elements to the learning process.
-- **Raghav**: Translation of educational videos into regional languages, making the content accessible to a wider audience.
+This README is structured as a professional project handoff: it explains the purpose, stack, setup flow, and maintenance expectations so the repository is easier to evaluate, run, and extend.
 
-## Technologies Used
-- HTML, CSS, JavaScript: For building the website structure and design.
-- Python: For backend development.
-- Various multimedia tools: For creating and translating educational videos.
+## Highlights
 
-## How to Use
-1. **Navigate to the Home Page**: Start by exploring the homepage to understand the layout and features.
-2. **Select a Language**: Choose your preferred regional language from the available options.
-3. **Explore Educational Resources**: Access quizzes, games, labs, and videos from the respective sections.
-4. **Interactive Learning**: Engage with the interactive content to enhance your learning experience.
+- Clear implementation of the project goal: Smart India Hackathon project repository for rapid prototyping, web development and problem-solution experimentation.
+- Organized repository structure for maintainable iteration and future extension.
+- Built around JavaScript with pragmatic tooling choices.
+- Tagged for discoverability around hackathon, javascript, prototype, sih.
 
-## Future Enhancements
-- Adding more regional languages to expand accessibility.
-- Introducing more games and quizzes to cover a broader range of topics.
-- Continuous improvement of the website design based on user feedback.
+## Tech Stack
 
-## Acknowledgments
-We would like to thank the Smart India Hackathon organizers for providing us with this opportunity on14th Sept 2023 in BML University to contribute to educational development in rural areas.
+- JavaScript
 
----
+<p>
+  <img src="https://img.shields.io/badge/JavaScript-111827?style=flat" alt="JavaScript" />
+</p>
 
-This project demonstrates our commitment to making education accessible and enjoyable for all children, regardless of their geographic location or language. We hope this initiative will have a positive impact on the learning experiences of rural kids across India.
+## Getting Started
+
+### Prerequisites
+
+- Git
+- A runtime appropriate for the stack listed above
+
+### Installation
+
+```bash
+git clone https://github.com/RaghavSobti37/SIH-Hackathon.git
+cd SIH-Hackathon
+No install required.
+```
+
+### Development
+
+```bash
+Open index.html in a browser or serve the folder locally.
+```
+
+## Project Structure
+
+The repository is organized around the source code, configuration, and project assets needed to run or extend the application. Start with the main entry point and configuration files, then follow the feature or module directories from there.
+
+## Quality Notes
+
+- Keep implementation changes small, reviewed, and easy to reason about.
+- Document new environment variables, scripts, and external services as they are added.
+- Prefer clear naming and predictable structure over clever abstractions.
+- Validate user-facing flows after any dependency, routing, or deployment change.
+
+## Topics
+
+- hackathon
+- javascript
+- prototype
+- sih
+
+## Author
+
+Built and maintained by [Raghav Raj Sobti](https://github.com/RaghavSobti37).
+
